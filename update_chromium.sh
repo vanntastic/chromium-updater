@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Based on the script by Raj at : http://rtfm-nub.blogspot.com/2009/07/how-to-get-chromium-chrome-nightly.html
+
 BASEDIR=http://build.chromium.org/buildbot/snapshots/chromium-rel-mac
 cd ~/tmp/
 
