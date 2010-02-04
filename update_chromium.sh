@@ -19,6 +19,6 @@ echo "Done."
 echo "Moving to Applications directory..."
 rm -rf /Applications/Chromium.app/
 mv chrome-mac/Chromium.app/ /Applications/
-rm ~/tmp/$REVNUM
+rm ~/tmp/$REVNUM.zip
 echo "Done, update successful"
 
