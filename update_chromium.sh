@@ -10,7 +10,7 @@ REVNUM=`curl -# $BASEDIR/LATEST`
 
 echo "Found latest revision number $REVNUM, starting download"
 
-curl $BASEDIR/$REVNUM/chrome-mac.zip > $REVNUM.zip
+curl $BASEDIR/$REVNUM/chrome-mac.zip > ~/tmp/$REVNUM.zip
 
 echo "Unzipping..."
 unzip $REVNUM.zip 2>&1 > /dev/null
@@ -18,7 +18,8 @@ echo "Done."
 
 echo "Moving to Applications directory..."
 rm -rf /Applications/Chromium.app/
-mv chrome-mac/Chromium.app/ /Applications/
+mv ~/tmp/chrome-mac/Chromium.app/ /Applications/
 rm ~/tmp/$REVNUM.zip
+rm -rf ~/tmp/chrome-mac
 echo "Done, update successful"
 
